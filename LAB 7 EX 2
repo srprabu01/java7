@@ -1,0 +1,26 @@
+import java.util.*;
+public class Student {
+   public static void main (String[] args) {
+     Scanner sc= new Scanner(System.in);
+      ArrayList<Integer> rollno= new ArrayList<Integer>();
+      ArrayList<String> name= new ArrayList<String>();
+      ArrayList<double> cgpa= new ArrayList<double>();
+      for(int i=0;i<20;i++){
+	System.out.print("Enter name ");  
+	String s= sc.nextInt();  
+	name.add(s);
+	System.out.print("Enter rollno ");  
+	int r= sc.nextInt();  
+	rollno.add(r);
+	System.out.print("Enter cgpa");  
+	double c= sc.nextInt();  
+      	cgpa.add(c);
+      }
+  
+     Comparator comparator = Collections.reverseOrder();
+      System.out.println("names = "+name);
+      Collections.sort(name, comparator);
+      System.out.println("Sorted List in descending order = "+name);
+
+   }
+}

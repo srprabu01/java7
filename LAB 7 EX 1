@@ -1,0 +1,62 @@
+import java.util.*; 
+public class SetExample{ 
+    public static void main(String[] args) 
+    { 
+        Set<String> hash_Set 
+            = new HashSet<String>(); 
+  
+        hash_Set.add("Prawin"); 
+        hash_Set.add("Ramya"); 
+        hash_Set.add("Ramakrishnan"); 
+        hash_Set.add("pr"); 
+        hash_Set.add("SetS"); 
+        
+        System.out.println("All words:");
+        System.out.println(hash_Set); 
+       
+        System.out.println("End with plural:");
+        for String str in  hash_Set:
+         {
+	int i; 
+ 
+  	  for (i = 0; i < str.length(); i++)  
+   	 { 
+		if (i == str.length() - 1){
+			if(str[i]=="S")
+			{
+				System.out.println(str);
+			}
+		}
+                        }
+    } 
+        System.out.println("Printing without S");
+       for String str1 in  hash_Set:
+         {
+	int i; 
+ 
+  	  for (i = 0; i < str1.length(); i++)  
+   	 { 
+		if (i == str1.length() - 1){
+			if(str[i]=="S")
+			{ 
+				for (j = 0; j < str1.length()-1; j++)  
+   			 	{ 
+				System.out.print(str[j]);
+				}
+			        System.out.println("") ;
+			}
+			else
+			{
+				System.out.println(str);
+			}
+		}
+                        }
+    } 
+        System.out.println("Reverse of the string");
+     for String str2 in  hash_Set:
+         {
+	System.out.println(str2.reverse());
+          }
+
+ }
+} 
